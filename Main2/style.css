@@ -1,0 +1,93 @@
+body{
+  background: linear-gradient(to right, mediumpurple, lightgreen);
+}
+#h1{
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 1px 1px 1px;
+}
+#h1:hover{
+  font-size: 2.5em;
+}
+#h2{
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+}
+#h4{
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px;
+  color: #2DBE72;
+}
+#label1{
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  font-size: 6.5em;
+  text-shadow: 4px 4px 4px;
+  transition: 0.55s;
+}
+#label1:hover{
+  font-size: 6.75em;
+  color: darkgreen;
+}
+.container1{
+  border: solid;
+  box-shadow: 5px 5px 5px;
+  box-align: center;
+  background-color: white;
+  text-align: center;
+  height: 440px;
+  width: 355px;
+}
+.buttons{
+  font-size: 2.5em;
+}
+#button1{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: aqua;
+  transition: 0.65s;
+}
+#button2{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.65s;
+}
+#button3{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: blue;
+  transition: 0.65s;
+}
+#button4{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: yellow;
+  transition: 0.65s;
+}
+#button1:active{
+  background-color: #A01DE6;
+}
+#button2:active{
+  background-color: #05A2DE;
+}
+#button3:active{
+  background-color: #DB21E0;
+}
+#button4:active{
+  background-color: #05A2DE00;
+}
+.container2{
+  text-align: center;
+  border: double;
+  background-color: white;
+  height: 200px;
+}
+#label2{
+  font-size: 5em;
+}
