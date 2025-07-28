@@ -12,13 +12,22 @@ const d = document.getElementById("button4")
 const e = document.getElementById("label1")
 const f = document.getElementById("label2")
 let countedNum = 0
+let taps = 0
 function updateLabel(){
   e.textContent = countedNum
 }
 function increaseCount(){
   countedNum++
+  taps++
   updateLabel()
   liveDisplay()
+  if(taps === 10){
+    alert("You get an extra +10 next tap.")
+    countedNum = countedNum + 10
+  }
+  if(taps === 11){
+    taps = 0
+  }
   if(countedNum === 1000){
     alert("Congrats, you won the game you can still continue.")
   }
@@ -33,6 +42,8 @@ function decreaseCount(){
 }
 function resetCount(){
   countedNum = 0
+  taps = 0
+  alert("Number has resetted and number of taps too.")
   updateLabel()
   liveDisplay()
 }
