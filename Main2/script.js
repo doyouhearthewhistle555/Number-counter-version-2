@@ -34,6 +34,10 @@ function increaseCount(){
 }
 function decreaseCount(){
   countedNum--
+  taps--
+  if(taps === -1){
+    taps = 0
+  }
   updateLabel()
   liveDisplay()
   if(countedNum === -1000){
