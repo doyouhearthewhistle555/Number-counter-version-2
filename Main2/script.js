@@ -22,14 +22,10 @@ function increaseCount(){
   updateLabel()
   liveDisplay()
   if(taps === 10){
-    alert("You get an extra +10 next tap.")
     countedNum = countedNum + 10
   }
   if(taps === 11){
     taps = 0
-  }
-  if(countedNum === 1000){
-    alert("Congrats, you won the game you can still continue.")
   }
 }
 function decreaseCount(){
