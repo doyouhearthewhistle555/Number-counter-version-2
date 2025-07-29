@@ -11,14 +11,19 @@ const c = document.getElementById("button3")
 const d = document.getElementById("button4")
 const e = document.getElementById("label1")
 const f = document.getElementById("label2")
+const g = document.getElementById("button5")
+const h = document.getElementById("button6")
 let countedNum = 0
 let taps = 0
+let tapsEnabled = true
 function updateLabel(){
   e.textContent = countedNum
 }
 function increaseCount(){
   countedNum++
-  taps++
+  if(tapsEnabled){
+    taps++
+  }
   updateLabel()
   liveDisplay()
   if(taps === 10){
@@ -55,6 +60,24 @@ function generaterandomNum(){
     alert("You generated the number 1000! lucky! you can still continue.")
   }
 }
+function disableTaps(){
+  tapsEnabled = false
+  if(tapsEnabled){
+    taps++
+  }
+  else{
+    taps = 0
+    g.style.backgroundColor = "Red"
+    g.textContent = "Move on to the second button to enable taps again."
+  }
+}
+function enableTaps(){
+  tapsEnabled = true
+  if(tapsEnabled){
+    taps = 1
+    g.textContent = "Disable Tap Count?"
+  }
+}
 function liveDisplay(){
   f.textContent = countedNum
 }
@@ -66,4 +89,10 @@ c.addEventListener('click', resetCount)
 c.addEventListener('click', playAudio)
 d.addEventListener('click', generaterandomNum)
 d.addEventListener('click', playAudio)
+g.addEventListener('click', disableTaps)
+g.addEventListener('click', playAudio)
+h.addEventListener('click', enableTaps)
+h.addEventListener('click', playAudio)
 alert("Welcome to my website! this website is mobile version only, you can use any high end device like PC for the worst experience, mobile version is most recommended for this website.")
+g.style.backgroundColor = "Green"
+h.style.backgroundColor = "Green"
