@@ -58,12 +58,12 @@ function generaterandomNum(){
 function liveDisplay(){
   f.textContent = countedNum
 }
-a.addEventListener('touchstart', increaseCount)
-a.addEventListener('touchstart', playAudio)
-b.addEventListener('touchstart', decreaseCount)
-b.addEventListener('touchstart', playAudio)
-c.addEventListener('touchstart', resetCount)
-c.addEventListener('touchstart', playAudio)
-d.addEventListener('touchstart', generaterandomNum)
-d.addEventListener('touchstart', playAudio)
+a.addEventListener('click', increaseCount)
+a.addEventListener('click', playAudio)
+b.addEventListener('click', decreaseCount)
+b.addEventListener('click', playAudio)
+c.addEventListener('click', resetCount)
+c.addEventListener('click', playAudio)
+d.addEventListener('click', generaterandomNum)
+d.addEventListener('click', playAudio)
 alert("Welcome to my website! this website is mobile version only, you can use any high end device like PC for the worst experience, mobile version is most recommended for this website.")

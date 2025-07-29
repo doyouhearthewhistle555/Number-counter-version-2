@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="/Main2/manifest.json">
   <link rel="icon" type="image/png" href="/Favicon/favicon.png">
   <link rel="stylesheet" href="/Main2/style.css">
   <title>Number Counter (Version 2) mobile only!</title>
@@ -27,6 +28,19 @@
   	<label id="label2">0</label>
   </div>
   <audio src="/imagesvideosaudios/audio.wav" id="audio1" preload="auto"></audio>
+  <script>
+    if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+  });
+}
+  </script>
   <script src="/Main2/script.js"></script>
 </body>
 </html>
