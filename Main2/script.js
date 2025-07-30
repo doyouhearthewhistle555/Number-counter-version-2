@@ -94,5 +94,5 @@ g.addEventListener('click', playAudio)
 h.addEventListener('click', enableTaps)
 h.addEventListener('click', playAudio)
 alert("Welcome to my website! this website is mobile version only, you can use any high end device like PC for the worst experience, mobile version is most recommended for this website.")
-g.style.backgroundColor = "Green"
+g.style.backgroundColor = "Red"
 h.style.backgroundColor = "Green"
