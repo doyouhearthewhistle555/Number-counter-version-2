@@ -1,9 +1,7 @@
 const audio = document.getElementById("audio1")
 function playAudio(){
-  if(audio){
-    audio.currentTime = 0
-    audio.play()
-  }
+  audio.currentTime = 0
+  audio.play()
 }
 const a = document.getElementById("button1")
 const b = document.getElementById("button2")
@@ -62,21 +60,9 @@ function generaterandomNum(){
 }
 function disableTaps(){
   tapsEnabled = false
-  if(tapsEnabled){
-    taps++
-  }
-  else{
-    taps = 0
-    g.style.backgroundColor = "Red"
-    g.textContent = "Move on to the second button to enable taps again."
-  }
 }
 function enableTaps(){
   tapsEnabled = true
-  if(tapsEnabled){
-    taps = 1
-    g.textContent = "Disable Tap Count?"
-  }
 }
 function liveDisplay(){
   f.textContent = countedNum
@@ -93,6 +79,6 @@ g.addEventListener('click', disableTaps)
 g.addEventListener('click', playAudio)
 h.addEventListener('click', enableTaps)
 h.addEventListener('click', playAudio)
-alert("Welcome to my website! this website is mobile version only, you can use any high end device like PC for the worst experience, mobile version is most recommended for this website.")
+alert("Welcome to my website, this took like 1 hour to make i hope you enjoyed it and have fun (the tap count is the number of clicks you did to the Increase button, you gain 10 number if you get to 10 taps then the tap count resets again.)")
 g.style.backgroundColor = "Red"
 h.style.backgroundColor = "Green"

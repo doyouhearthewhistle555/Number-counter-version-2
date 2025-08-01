@@ -87,6 +87,7 @@ body{
   border: double;
   background-color: white;
   height: 225px;
+  box-shadow: 2px 2px 2px;
 }
 #label2{
   font-size: 5em;
